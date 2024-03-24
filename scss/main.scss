@@ -1,0 +1,143 @@
+@import 'funciones';
+@import 'variables';
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+main{
+  background-image: url("../img/windows.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+h1{
+  color: white;
+  font-weight: 400;
+  font-size: 25px;
+  background-color: rgba($primary-color,0.53);
+  border-radius: 10px;
+  padding: $spacing-padding-sm 20px;
+  display: block;
+  margin: 20px auto 0;
+  width: fit-content;
+
+}
+
+.column{
+  float: left;
+  width: 18%;
+  box-sizing: border-box;
+  padding: $spacing-padding-sm;
+  border-radius: 20px;
+  margin:10px;
+  color: black;
+  background-color: $secondary-color;
+}
+h3{
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-family: Roboto, sans-serif;
+}
+.card{
+  background-color: white;
+  border-radius: 10px;
+  padding: $spacing-padding-sm;
+  padding-bottom: 40px;
+  padding-right: 0;
+  position: relative;
+  border: solid 1px #0000001c;
+  margin-bottom: 10px;
+  font-size: 15px;
+
+  h3{
+    text-align: left;
+    padding-top: $spacing-padding-sm;
+    font-size: 16px;
+  }
+}
+
+.card:hover{
+  background-color: $hover-color;
+  cursor: pointer;
+
+  h3,p {
+    color: white;
+  }
+  .close-btn {
+    background-color: black;
+  }
+  .front i,
+  .back i,
+  .device i {
+    color:$hover-color;
+  }
+}
+
+  .tags{
+    position: absolute;
+    bottom: 0.5px;
+    left: 10px;
+    padding-bottom: $spacing-padding-sm;
+  }
+
+  .front, .back, .device {
+    float: left;
+    margin-left: 10px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+
+.front {
+background-color: theme(success);
+}
+
+
+.back {
+  background-color: theme(back);
+
+}
+
+.device {
+  border-radius: 60%;
+  background-color: theme(warning);
+
+}
+
+  .front i, .back i, .device i {
+    color: white;
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: red;
+    cursor: pointer;
+    border-radius: 50%;
+
+    span {
+      color: white;
+      font-size: 20px;
+      font-weight: bold;
+    }
+  }
+
+
+
